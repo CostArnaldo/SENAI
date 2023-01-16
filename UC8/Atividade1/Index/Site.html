@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Qwitcher+Grypen&display=swap" rel="stylesheet">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width">
+   <Title>Cadastro para Eventos</Title>
+   <link rel="stylesheet" href="StyleC.css"/>
+</head>    
+<body>    
+<div class="screen">
+  <div class="leftside">
+        <form method="POST" action= "palestras.html" class="cadastro">
+            <h1 class= "titulo" style="color: rgb(0, 160, 160); text-shadow: 0px 0px 5px; ">Bem Vindo a Página de Cadastro!</h1> 
+            <br>
+            <h3 class="subtitulo" style="color: rgb(0, 160, 160); font-family: cursive;">Faça seu cadastro abaixo e escolhe o evento de sua preferência.</h3> 
+        <label>
+            Nome Completo: <br/>
+            <input type="text" name="name" data-rules="name"><br>
+            <a></a>
+        </label>
+        <label>
+            Idade: <br/>
+            <input type="text" name="idade" data-rules="name|age"> 
+        </label>
+        <label>
+            e-mail: <br/>
+            <input type="email" name="email" data-rules="name|email"> 
+        </label>
+        <label>    
+            CPF: <br/>
+            <input type="text" name="cpf" data-rules="name|cpf"> 
+        </label>
+        <label>
+            Senha: <br/>
+            <input type="password" name="senha" data-rules="name|senha"> 
+        </label>
+        
+        <input type="submit" class="buttonCadastro" value="Cadastrar">
+        </form>
+    </div>
+    <div class="rightside">
+        <img src="C:\Users\arnal\Documents\SENAI\UC8\Atividade1\imagens\palestra1.jpg" alt="">
+    </div>
+</div> 
+<script src="Script.js"></script>
+</body>
+</html>

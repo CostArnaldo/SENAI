@@ -1,0 +1,103 @@
+Levantamento de Requisitos
+Briefing 
+reunião inicial com cliente/ coleta as primeiras informações
+
+O documento  resultante  da  reunião  de  briefing  deve  conter  contém  informações  sobre  a  empresa,  o  tipo  de  produto  ou  serviço  a  ser  oferecido,  o  prazo,  o  orçamento, o público-alvo etc.
+O levantamento das informações normalmente ocorre em uma reunião, na qual o responsável pelo projeto coleta dados importantes sobre o cliente e a necessidade apresentada. 
+Esse levantamento precisa ser breve, detalhado e objetivo.
+
+Brainstorm 
+levantamento de idéias.
+
+O brainstorm é  uma  técnica  utilizada  para  explorar  a  capacidade  criativa  das  pessoas,  estimulando-as,  com  o  objetivo  de  gerar  ideias  para solucionar um problema.
+
+Questionário
+
+
+É uma lista de perguntas direcionadas aos requisitos de um produto ou serviço.  
+Esses requisitos são as necessidades, capacidades ou condições que devem ser supridas, garantindo um acerto maior nas expectativas lançadas.
+Habitualmente é utilizado para obter informações das pessoas que serão impactadas pelo sistema.
+
+
+Entrevista
+Coleta de dados de usuários e indentificar possiveis problemas.
+
+A entrevista é uma forma de diálogo com os usuários dos produtos ou serviços, a fim de buscar respostas.
+Diferentemente do briefing e do brainstorm, etapas em que o projeto está iniciando, a entrevista ocorre depois que o produto, serviço ou sistema já foi criado ou desenvolvido. 
+O entrevistado é nossa fonte de informação. Essa técnica pode ser guiada por um roteiro de perguntas, 
+permitindo coletar informações detalhadas de usuários ou grupos e, entender o que o entrevistado deseja, seus pontos de vista e quais são as suas ideias.
+
+
+Etnografia
+Analise social e cultural das tarefas numa organização.
+
+Workshop
+Especificar as necessidades do projeto.
+
+Prototipagem
+Modelo preliminar de um produto.
+
+Trata-se de um esboço ou versão inicial do que é esperado no final do projeto. 
+O protótipo permite testar e validar ideias sem todo o esforço empenhado em um projeto terminado, 
+mas que contempla o  contexto  real  do  que  será  atingido  e  desenvolvido.  
+Assim, o risco de haver erros futuros no sistema é diminuído.
+
+METODOLOGIAS DE DESENVOLVIMENTO
+
+Existem várias metodologias que  orientam  processos,  métodos  e  indicam  ferramentas para alcançar o objetivo de um projeto.
+Tradicionais
+Modelo   cascata  
+propõem   uma   sequência   mais   estruturada   e   longa   de   desenvolvimento.
+Flexíveis 
+Scrum,  Lean,  Kanban  e  XP  (Metodologias  ágeis,  propõem  etapas  mais  curtas  e  flexíveis de desenvolvimento.)
+Híbridas 
+Com características dos dois tipos.
+
+Scrum Framework
+
+Sprints 
+sprints são os ciclos de entrega, que duram de 2 a 4 semanas. 
+Durante os sprints são desenvolvidos os itens selecionados na sprint planning (reunião de planejamento).
+
+Product Backlog
+Product  backlog  (carteira  de  produtos,  em  português)  é  a  lista  de  funcionalidades  brevemente descritas que o produto ou serviço deve apresentar. 
+O product backlog é fracionado e cada parte dele é implementada na respectiva entrega (sprint).
+
+Sprint Planning
+Sprint planning (planejamento) é a reunião na qual são selecionadas as funcionalidades do product backlog que serão priorizadas naquele sprint (ciclo). 
+Ocorre sempre no início de cada sprint.
+
+Sprint Backlog
+Sprint backlog é a lista de funcionalidades selecionadas do product backlog durante a sprint planning. 
+Os itens selecionados deverão ser desenvolvidos durante a sprint.
+
+Scrum Team
+Scrum team é a equipe envolvida no projeto e se compromete a desenvolver os itens selecionados durante a sprint.
+
+Daily Meeting
+Daily  meeting é uma reunião diária de cerca de 15 minutos, com o objetivo de esclarecer o que foi realizado no dia anterior, identificar impedimentos e priorizar o que será feito no dia atual.
+
+Sprint Review
+Sprint review é a reunião realizada ao final de cada sprint (ciclo), na qual são apresentadas as funcionalidades ou resultados alcançados da sprint backlog.
+
+Incremento 
+incremento ou mudança de Backlog é a soma de todos os itens selecionados no sprint e que foram completados, somados aos valores de todos os incrementos de todos os ciclos anteriores.
+Esses  itens  que  foram  desenvolvidos  ainda  podem  sofrer  ajustes  antes  de  serem  considerados finalizados, configurando uma mudança de backlog.
+
+Sprint Retrospective
+Sprint retrospective é uma reunião interna da Scrum  team, realizada ao final de cada sprint. 
+Nesta reunião, são identificados pontos positivos, pontos de melhorias e pontos de ação.
+
+Release
+Release é a entrega de um ou mais incrementos
+
+FASES DO KAIZEN
+Em geral, a metodologia Kaizen segue o ciclo PDCA ou ciclo de Deming. 
+Trata-se de uma ferramenta de gestão que tem como objetivo a melhoria contínua. 
+Ela promove uma gestão cíclica e que visa a solução dos problemas.
+O ciclo é composto pelas fases de planejamento, execução, verificação e ação, que, em inglês, são representadas pelos termos plan, do, check e act.
+Planejar (PLAN):Estabelecer os objetivos e o processo para atingi-los, planejando os passos que pretende realizar.
+Fazer (DO):Executar o que foi definido na etapa de planejamento.   Siga em frente e conheça mais sobre cada fase.
+Verificar (CHECK):Verificar   os   resultados   atingidos   e   compará-los   com   o   que   era   esperado   no   planejamento.
+Agir (ACT):Traçar novas metas para alcançar resultados melhores na próxima rodada.
+
