@@ -1,0 +1,91 @@
+PSI (politica de segurança da informação)
+Arquivos criptografados são uma ótima forma de segurança.
+Arquivos criptografados não podem ser compactados.
+
+Firewall
+Software (ou hardware) que funciona como uma barreira, controlando, bloqueando ou restringindo o acesso às portas, exceto àquelas definidas como públicas.
+
+VPN
+Virtual Private Network (Rede Privada Virtual)
+As VPNs criptografam seu tráfego de Internet e disfarçam sua identidade online. 
+As vantagens em utilizar VPNs são:
+•Ter acesso seguro a um servidor remoto;
+•Criar conexões entre computadores remotos e;
+•Apresentar a conexão como se fosse uma rede privada local.
+
+Backup
+Sgnifica cópia de segurança.
+
+
+LGPD
+Lei  Geral  de  Proteção  de  Dados
+
+Requisitos Funcionais (RF)
+Esse tipo de requisito especifica o que o sistema deve fazer. É o comportamento de uma função ou de um componente no sistema.
+
+Requisitos Não Funcionais 
+Os requisitos não funcionais estão associados a características que permitirão que o software funcione adequadamente,
+ não necessariamente associadas a funções do sistema de modo direto.
+
+Sistema Web
+
+O sistema web basicamente exige 3 coisas:
+. Servidor web
+. Computador
+. Linguagem ou protocolo.
+
+Servidor
+Um servidor é um computador centralizado.
+
+Servidor em Nuvem
+É um servidor disponibilizado pela internet.
+
+Principais motivos para nova tendencia:
+Capacidade e Abrangencia
+A capacidade de de dimensionamento elastico está relacionada 
+ao fornecimento da quantidade adequada de recursos de TI 
+sempre que necessario e na localização deográfica correta.
+
+Confiabilidade
+A computação em nuvem facilita e reduz os custos de backup de dadose etc...,
+á que os dados podem ser espalhados em diversos sites redudantes
+na rede do provedor em nuvem.
+
+Custo
+Elimina o gasto de capital com a compra de hadware e software 
+e com a realizaçao em diversos sites redudantes na rede de provedor em nuvem.
+
+Desempenho
+Os serviços de computação em nuvem são executados em uma rede mundial de data centers seguros, 
+que são atualizados regurlamente com a mais recente geração de hardware de computação,
+de modo rápido e eficiente.
+
+Segurança 
+muitos provedores em nuvem oferecem um amplo conjunto de políticas, tecnologias e controles que fortalecem sua postura geral de segurança,
+ajudando a proteger os dados, os app e a infraestrutura contra possiveis ameaças.
+
+Velocidade
+A maior parte dos serviços de computação em nuvem é fornecida por autoserviço e sob demanda, 
+para que até grandes quantidades de recursos de computação possam ser provisionadas em minutos. 
+
+
+Hospedagem
+O servidor de hospedagem faz todo o trabalho de identificar e converter os dados online em palavras e imagens, 
+assim como distribuir essas informações na internet. 
+Nesse sentido, é um computador de alto desempenho que tem a função de oferecer serviços para outros computadores, 
+podendo ser dedicado ou compartilhado.
+
+Servidor Dedicado
+Normalmente, sites de alto tráfego, como portais de conteúdo muito visitados,  
+e sistemas online de vendas, como o CRM5, exigem um servidor dedicado, 
+pois ele é mais seguro, escalável e apresenta melhor perfomance.
+
+Servidor Compartilhado
+É mais recomendado para websites simples,
+ que não exigem aplicações complexas, não possuem muitas requisições e não necessitem de proteções mais seguras, 
+além de escalabilidade e desempenho.
+
+Chapter.FrontEnd.zip
+Chapter.zip
+
+
