@@ -1,0 +1,15 @@
+C:\Users\arnal\Documents\SENAI\UC12\SA2\Encontro-Remoto5\bin\Debug\net6.0\Encontro-Remoto5.exe
+C:\Users\arnal\Documents\SENAI\UC12\SA2\Encontro-Remoto5\bin\Debug\net6.0\Encontro-Remoto5.deps.json
+C:\Users\arnal\Documents\SENAI\UC12\SA2\Encontro-Remoto5\bin\Debug\net6.0\Encontro-Remoto5.runtimeconfig.json
+C:\Users\arnal\Documents\SENAI\UC12\SA2\Encontro-Remoto5\bin\Debug\net6.0\Encontro-Remoto5.dll
+C:\Users\arnal\Documents\SENAI\UC12\SA2\Encontro-Remoto5\bin\Debug\net6.0\Encontro-Remoto5.pdb
+C:\Users\arnal\Documents\SENAI\UC12\SA2\Encontro-Remoto5\obj\Debug\net6.0\Encontro-Remoto5.csproj.AssemblyReference.cache
+C:\Users\arnal\Documents\SENAI\UC12\SA2\Encontro-Remoto5\obj\Debug\net6.0\Encontro-Remoto5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arnal\Documents\SENAI\UC12\SA2\Encontro-Remoto5\obj\Debug\net6.0\Encontro-Remoto5.AssemblyInfoInputs.cache
+C:\Users\arnal\Documents\SENAI\UC12\SA2\Encontro-Remoto5\obj\Debug\net6.0\Encontro-Remoto5.AssemblyInfo.cs
+C:\Users\arnal\Documents\SENAI\UC12\SA2\Encontro-Remoto5\obj\Debug\net6.0\Encontro-Remoto5.csproj.CoreCompileInputs.cache
+C:\Users\arnal\Documents\SENAI\UC12\SA2\Encontro-Remoto5\obj\Debug\net6.0\Encontro-Remoto5.dll
+C:\Users\arnal\Documents\SENAI\UC12\SA2\Encontro-Remoto5\obj\Debug\net6.0\refint\Encontro-Remoto5.dll
+C:\Users\arnal\Documents\SENAI\UC12\SA2\Encontro-Remoto5\obj\Debug\net6.0\Encontro-Remoto5.pdb
+C:\Users\arnal\Documents\SENAI\UC12\SA2\Encontro-Remoto5\obj\Debug\net6.0\Encontro-Remoto5.genruntimeconfig.cache
+C:\Users\arnal\Documents\SENAI\UC12\SA2\Encontro-Remoto5\obj\Debug\net6.0\ref\Encontro-Remoto5.dll
