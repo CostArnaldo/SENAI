@@ -36,6 +36,8 @@ var endComercial = novoEndPF.endComercial ? "Comercial" : "Residencial";
 var endComercialPJ = novoEndPJ.endComercial ? "Comercial" : "Residencial";
 var idade = DateTime.Today - novaPF.dataN;
 
+
+
 Console.WriteLine($"Teste Maior de idade: {(novaPF.ValidarDataN("11/11/2020") ? "Reprovado" : "Aprovado")}");
 Console.WriteLine("nome: " + novaPF.nome);
 Console.WriteLine("CPF: " + novaPF.cpf.ToString(@"000\.000\.000\-00"));
