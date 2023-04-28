@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Encontro-Remoto7/1.0.0": {
+        "runtime": {
+          "Encontro-Remoto7.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Encontro-Remoto7/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
