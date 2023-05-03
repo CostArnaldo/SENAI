@@ -37,7 +37,7 @@ namespace encontro_remoto7.Classes
         {
             bool retornoCnpjValido= Regex.IsMatch(cnpj, @"(\d{14})|(\d{2}.\d{3}.\d{3}/\d{4}-\d{2})$");
 
-    // CNPJ não pode ser diferente de 14 dígitos,0
+    // CNPJ não pode ser diferente de 14 dígitos
     if (cnpj.Length != 14)
     {
         return false;

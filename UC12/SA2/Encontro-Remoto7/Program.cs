@@ -1,14 +1,14 @@
 ﻿// dotnet run p/ rodar o projeto
 using encontro_remoto7.Classes;
 
-List<PessoaFisica> listaPF = new List<PessoaFisica>();
+ List<PessoaFisica> listaPF = new List<PessoaFisica>();
 List<PessoaJuridica> listaPJ = new List<PessoaJuridica>();
-List<Endereco> listaEnd = new List<Endereco>();
+List<Endereco> listaEndPF = new List<Endereco>();
+List<Endereco> listaEndPJ = new List<Endereco>();
 
 string? opcao;
 string? finalizar;
 string? reinicializar;
-
 
 
 Utils.Apresentacao();
@@ -18,8 +18,6 @@ reinicializar:
 reinicializar = Console.ReadLine();
 Console.BackgroundColor = ConsoleColor.Black;
 Console.ForegroundColor = ConsoleColor.Blue;
-
-
 Console.Clear();
 do
 {
@@ -29,11 +27,9 @@ do
     foreach (char letra in topico)
     {
         Console.Write(letra);
-        Thread.Sleep(80);
+        Thread.Sleep(40);
     }
     Console.WriteLine("\x1b[0m");
-    Thread.Sleep(1500);
-
     Console.WriteLine("\x1b[1m");
 
     string escolhas = $@"   
@@ -46,10 +42,11 @@ do
         0- Sair do Sistema 
                         
 Escolha a opção desejada e tecla 'Enter'.";
+
     foreach (char letra in escolhas)
     {
         Console.Write(letra);
-        Thread.Sleep(15);
+        Thread.Sleep(20);
     }
     Console.WriteLine("\x1b[0m");
     opcao = Console.ReadLine();
@@ -58,32 +55,34 @@ Escolha a opção desejada e tecla 'Enter'.";
 Console.Clear();
 if (opcao == "1")
 {
-
     Console.ForegroundColor = ConsoleColor.Yellow;
     Console.WriteLine("\x1b[1m");
     Console.WriteLine($"\n {"PESSOA FÍSICA"} \n");
-    Thread.Sleep(2000);
+    Thread.Sleep(1000);
     Console.WriteLine("\x1b[0m");
+    
+for (int i = 0; i < listaPF.Count; i++)
+{
+    PessoaFisica individuo = listaPF[i];
+    Endereco end = listaEndPF[i];
+    var idadeD = (DateTime.Today - individuo.dataN).Days;
+    int idade = (idadeD / 365);
 
-    foreach (PessoaFisica individuo in listaPF)
-    {
-        var idadeD = (DateTime.Today - individuo.dataN).Days;
-        int idade = (idadeD / 365);
+    Console.WriteLine($"\x1b[1m Nome:\x1b[0m {individuo.nome}");
+    Console.WriteLine($"\x1b[1m CPF: \x1b[0m {individuo.cpf.ToString(@"000\.000\.000\-00")}");
+    Console.WriteLine($"\x1b[1m Válido: \x1b[0m {(individuo.ValidarCPF(individuo.cpf) ? "sim" : "não")}");
+    Console.WriteLine($"\x1b[1m Idade: \x1b[0m {idade}");
+    Console.WriteLine($"\x1b[1m Data de Nascimento Ex. DD/MM/YYYY: \x1b[0m {individuo.dataN}");
+    Console.WriteLine($"\x1b[1m Maior de idade: \x1b[0m {(individuo.ValidarDataN(individuo.dataN) ? "s" : "n")}");
+    Console.WriteLine($"\x1b[1m Endereço: \x1b[0m {end.logradouro},{end.numero} - {end.complemento})");
+    Console.WriteLine($"\x1b[1m Rendimento: \x1b[0m {individuo.rendimento:C}");
+    Console.WriteLine(($"\x1b[1m Imposto P. Física: \x1b[0m {individuo.CalcularImposto(individuo.rendimento):C}"));
+    Console.WriteLine();
+    Thread.Sleep(500);
+}
 
-        Console.WriteLine($"Nome: {individuo.nome}");
-        Console.WriteLine($"CPF:  {individuo.cpf.ToString(@"000\.000\.000\-00")}");
-        Console.WriteLine($"Válido: {(individuo.ValidarCPF(individuo.cpf) ? "sim" : "não")}");
-        Console.WriteLine($"Idade: {idade}");
-        Console.WriteLine($"Data de Nascimento Ex. DD/MM/YYYY: {individuo.dataN}");
-        Console.WriteLine($"Maior de idade: {(individuo.ValidarDataN(individuo.dataN) ? "sim" : "não")}");
-        Console.WriteLine($"Rendimento: {individuo.rendimento:C}");
-        Console.WriteLine(($"Imposto P. Física: {individuo.CalcularImposto(individuo.rendimento):C}"));
-        Thread.Sleep(500);
-    }
-    foreach (Endereco endereco in listaEnd)
-    {
-        Console.WriteLine($"Endereço: {endereco.logradouro}, {endereco.numero} - {endereco.complemento}");
-    }
+    
+    Console.WriteLine();
     finalizar = Console.ReadLine();
 }
 else if (opcao == "2")
@@ -91,28 +90,26 @@ else if (opcao == "2")
     Console.ForegroundColor = ConsoleColor.Cyan;
     Console.WriteLine("\x1b[1m");
     Console.WriteLine($"\n {"PESSOA JÚRIDICA"} \n");
-    Thread.Sleep(2000);
+    Thread.Sleep(1000);
     Console.WriteLine("\x1b[0m");
 
-    foreach (PessoaJuridica instituicao in listaPJ)
+    for (int i = 0; i < listaPJ.Count; i++)
     {
-        Console.WriteLine($"Razão Social: {instituicao.razaoSocial}");
-        Console.WriteLine($"CNPJ: {instituicao.cnpj.ToString(@"00\.000\.000\.\0000\-00")}");
-        Console.WriteLine($"Válido: {(instituicao.ValidarCnpj(instituicao.cnpj.ToString("00000000000000")) ? "sim" : "não")}");
-        Console.WriteLine($"Rendimento: {instituicao.rendimento:C}");
-        Console.WriteLine(($"Imposto P. Jurídica: {instituicao.CalcularImposto(instituicao.rendimento):C}"));
-    }
-    foreach (Endereco endereco in listaEnd)
-    {
-        
+        PessoaJuridica instituicao = listaPJ[i];
+        Endereco end = listaEndPJ[i];
 
-        Console.WriteLine($"Endereço: {endereco.logradouro}, {endereco.numero} - {endereco.complemento} - Comercial?");
-        if (endereco.endComercial == true) {
-            Console.WriteLine("sim");
-        } else {
-            Console.WriteLine("não");
-        }
-    }
+        Console.WriteLine($"\x1b[1m Razão Social: \x1b[0m {instituicao.razaoSocial}");
+        Console.WriteLine($"\x1b[1m CNPJ: \x1b[0m {instituicao.cnpj.ToString(@"00\.000\.000\.\0000\-00")}");
+        Console.WriteLine($"\x1b[1m Válido: \x1b[0m {(instituicao.ValidarCnpj(instituicao.cnpj.ToString("00000000000000")) ? "sim" : "não")}");
+        Console.WriteLine($"\x1b[1m Endereço: \x1b[0m {end.logradouro}, {end.numero} - {end.complemento} - Comercial? {(end.endComercial ? "sim" : "não")}");
+        Console.WriteLine($"\x1b[1m Rendimento: \x1b[0m {instituicao.rendimento:C}");
+        Console.WriteLine(($"\x1b[1m Imposto P. Jurídica: \x1b[0m {instituicao.CalcularImposto(instituicao.rendimento):C}"));
+        Console.WriteLine();
+    Thread.Sleep(500);
+}
+
+    
+    Console.WriteLine();
     finalizar = Console.ReadLine();
 }
 else if (opcao == "3")
@@ -124,59 +121,40 @@ else if (opcao == "3")
     novaPF.nome = Console.ReadLine();
 
     long cpf;
-Console.WriteLine("CPF:");
-do
-{
-    try
-    {
-        cpf = long.Parse(Console.ReadLine() ?? "");
-        var cpfString = cpf.ToString("D11");
-        if (cpfString.Length != 11)
-        {
-            throw new FormatException(); 
-        }
-        break; 
-    }
-    catch (FormatException)
-    {
-        Console.WriteLine("CPF inválido. Digite novamente:");
-    }
-} while (true);
-novaPF.cpf = cpf;
-
-
-
-
-    Console.WriteLine("Data de Nascimento: DD/MM/AAAA");
-    DateTime dataNascimento;
+    Console.WriteLine("CPF:");
     do
     {
         try
         {
-            dataNascimento = DateTime.Parse(Console.ReadLine() ?? "");
+            cpf = long.Parse(Console.ReadLine() ?? "");
+            var cpfString = cpf.ToString("D11");
+            if (cpfString.Length != 11)
+            {
+                throw new FormatException();
+            }
             break;
         }
         catch (FormatException)
         {
-            Console.WriteLine("Data de nascimento inválida. Digite novamente:");
+            Console.WriteLine("CPF inválido. Digite novamente:");
         }
     } while (true);
+    novaPF.cpf = cpf;
+
+    Console.WriteLine("Data de Nascimento: DD/MM/AAAA");
+    DateTime dataNascimento;
+    while (!DateTime.TryParse(Console.ReadLine() ?? "", out dataNascimento))
+    {
+        Console.WriteLine("Data de nascimento inválida. Digite novamente:");
+    }
     novaPF.dataN = dataNascimento;
 
     Console.WriteLine("Rendimento mensal:");
     long rendimento;
-    do
+    while (!long.TryParse(Console.ReadLine() ?? "", out rendimento))
     {
-        try
-        {
-            rendimento = long.Parse(Console.ReadLine() ?? "");
-            break;
-        }
-        catch (FormatException)
-        {
-            Console.WriteLine("Valor inválido. Digite novamente:");
-        }
-    } while (true);
+        Console.WriteLine("Valor inválido. Digite novamente:");
+    }
     novaPF.rendimento = rendimento;
 
     Console.WriteLine("Endereço: ");
@@ -184,27 +162,21 @@ novaPF.cpf = cpf;
 
     Console.WriteLine("Número: ");
     int numero;
-    do
+    while (!int.TryParse(Console.ReadLine() ?? "", out numero))
     {
-        try
-        {
-            numero = int.Parse(Console.ReadLine() ?? "");
-            break;
-        }
-        catch (FormatException)
-        {
-            Console.WriteLine("Valor inválido. Digite novamente:");
-        }
-    } while (true);
+
+        Console.WriteLine("Entrada inválida. Digíte um número válido.");
+    }
     novoEndPF.numero = numero;
 
     Console.WriteLine("Complemento: ");
     novoEndPF.complemento = Console.ReadLine();
 
     listaPF.Add(novaPF);
-    listaEnd.Add(novoEndPF);
+    listaEndPF.Add(novoEndPF);
 
-    Console.WriteLine("Cadastro finalizado!");
+
+    Console.WriteLine($@"              Cadastro finalizado!");
     Thread.Sleep(2000);
     goto reinicializar;
 }
@@ -220,53 +192,30 @@ else if (opcao == "4")
 
     Console.WriteLine("CNPJ: ");
     long cnpj;
-    do
+    while (!long.TryParse(Console.ReadLine() ?? "", out cnpj))
     {
-        try
-        {
-            cnpj = long.Parse(Console.ReadLine() ?? "");
-            break;
-        }
-        catch (FormatException)
-        {
-            Console.WriteLine("CNPJ inválido. Digite novamente:");
-        }
-    } while (true);
+        Console.WriteLine("CNPJ inválido. Digite novamente:");
+    }
     novaPJ.cnpj = cnpj;
 
     Console.WriteLine("Faturamento mensal:");
     long rendimento;
-    do
+    while (!long.TryParse(Console.ReadLine() ?? "", out rendimento))
     {
-        try
-        {
-            rendimento = long.Parse(Console.ReadLine() ?? "");
-            break;
-        }
-        catch (FormatException)
-        {
-            Console.WriteLine("Valor inválido. Digite novamente:");
-        }
-    } while (true);
+        Console.WriteLine("Valor inválido. Digite novamente:");
+    }
     novaPJ.rendimento = rendimento;
 
     Console.WriteLine("Endereço: ");
     novoEndPJ.logradouro = Console.ReadLine();
-    Console.WriteLine("Número: ");
 
+    Console.WriteLine("Número: ");
     int numero;
-    do
+    while (!int.TryParse(Console.ReadLine() ?? "", out numero))
     {
-        try
-        {
-            numero = int.Parse(Console.ReadLine() ?? "");
-            break;
-        }
-        catch (FormatException)
-        {
-            Console.WriteLine("Valor inválido. Digite novamente:");
-        }
-    } while (true);
+
+        Console.WriteLine("Entrada inválida. Digíte um número válido.");
+    }
     novoEndPJ.numero = numero;
 
     Console.WriteLine("Complemento: ");
@@ -275,23 +224,22 @@ else if (opcao == "4")
     bool endComercial;
     while (true)
     {
-        Console.Write("Comercial? (digite 'sim' ou 'não'): ");
+        Console.Write("Comercial? (digite 's' p/ sim ou 'n' p/ não): ");
         string resposta = Console.ReadLine()?.ToLower() ?? "";
 
-
-        if (resposta == "sim")
+        if (resposta == "s")
         {
             endComercial = true;
             break;
         }
-        else if (resposta == "não")
+        else if (resposta == "n")
         {
             endComercial = false;
             break;
         }
         else
         {
-            Console.WriteLine("Resposta inválida. Por favor, digite 'sim' ou 'não'.");
+            Console.WriteLine("Resposta inválida. Por favor, digite 's' ou 'n'.");
         }
 
     }
@@ -299,12 +247,12 @@ else if (opcao == "4")
 
 
     listaPJ.Add(novaPJ);
-    listaEnd.Add(novoEndPJ);
+    listaEndPJ.Add(novoEndPJ);
 
     Console.WriteLine($@"              Cadastro finalizado!");
     Thread.Sleep(2000);
     goto reinicializar;
-    
+
 }
 else if (opcao == "0")
 {
@@ -314,6 +262,7 @@ else if (opcao == "0")
     Thread.Sleep(1000);
     Console.WriteLine("\x1b[0m");
 }
+
 Console.Clear();
 
 

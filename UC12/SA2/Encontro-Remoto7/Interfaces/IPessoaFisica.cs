@@ -11,5 +11,5 @@ namespace encontro_remoto7.Interfaces
 
         bool ValidarCPF(long cpf);
     }
-
+    
 }

@@ -5,8 +5,9 @@ using System.Threading.Tasks;
 
 namespace encontro_remoto7.Classes
 {
-    public class Endereco
+    public class Endereco 
     {
+        
         public string? logradouro { get; set; }
 
         public int numero { get; set; }
