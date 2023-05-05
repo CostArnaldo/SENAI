@@ -1,0 +1,15 @@
+C:\Users\arnal\Documents\SENAI\UC12\SA2\Atividade-Online2\bin\Debug\net6.0\Atividade-Online2.exe
+C:\Users\arnal\Documents\SENAI\UC12\SA2\Atividade-Online2\bin\Debug\net6.0\Atividade-Online2.deps.json
+C:\Users\arnal\Documents\SENAI\UC12\SA2\Atividade-Online2\bin\Debug\net6.0\Atividade-Online2.runtimeconfig.json
+C:\Users\arnal\Documents\SENAI\UC12\SA2\Atividade-Online2\bin\Debug\net6.0\Atividade-Online2.dll
+C:\Users\arnal\Documents\SENAI\UC12\SA2\Atividade-Online2\bin\Debug\net6.0\Atividade-Online2.pdb
+C:\Users\arnal\Documents\SENAI\UC12\SA2\Atividade-Online2\obj\Debug\net6.0\Atividade-Online2.csproj.AssemblyReference.cache
+C:\Users\arnal\Documents\SENAI\UC12\SA2\Atividade-Online2\obj\Debug\net6.0\Atividade-Online2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arnal\Documents\SENAI\UC12\SA2\Atividade-Online2\obj\Debug\net6.0\Atividade-Online2.AssemblyInfoInputs.cache
+C:\Users\arnal\Documents\SENAI\UC12\SA2\Atividade-Online2\obj\Debug\net6.0\Atividade-Online2.AssemblyInfo.cs
+C:\Users\arnal\Documents\SENAI\UC12\SA2\Atividade-Online2\obj\Debug\net6.0\Atividade-Online2.csproj.CoreCompileInputs.cache
+C:\Users\arnal\Documents\SENAI\UC12\SA2\Atividade-Online2\obj\Debug\net6.0\Atividade-Online2.dll
+C:\Users\arnal\Documents\SENAI\UC12\SA2\Atividade-Online2\obj\Debug\net6.0\refint\Atividade-Online2.dll
+C:\Users\arnal\Documents\SENAI\UC12\SA2\Atividade-Online2\obj\Debug\net6.0\Atividade-Online2.pdb
+C:\Users\arnal\Documents\SENAI\UC12\SA2\Atividade-Online2\obj\Debug\net6.0\Atividade-Online2.genruntimeconfig.cache
+C:\Users\arnal\Documents\SENAI\UC12\SA2\Atividade-Online2\obj\Debug\net6.0\ref\Atividade-Online2.dll
