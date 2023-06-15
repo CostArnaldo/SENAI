@@ -1,5 +1,6 @@
 ﻿using Chapter.Models;
 using Chapter.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -9,100 +10,101 @@ namespace Chapter.Controllers
 [Produces("application/json")]
 [Route("api/[controller]")]
 [ApiController]
-public class LivroController : ControllerBase
-{
-
-    private readonly LivroRepository _livroRepository;
-
-    public LivroController(LivroRepository livroRepository)
+[Authorize]
+    public class LivroController : ControllerBase
     {
-        _livroRepository = livroRepository;
-    }
+
+        private readonly LivroRepository _livroRepository;
+
+        public LivroController(LivroRepository livroRepository)
+        {
+            _livroRepository = livroRepository;
+        }
 
     [HttpGet]
 
-    public IActionResult Listar()
-    {
-        try
+        public IActionResult Listar()
         {
-            return Ok(_livroRepository.Listar);
+            try
+            {
+                return Ok(_livroRepository.Listar);
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
         }
-        catch (Exception e)
-        {
-            throw new Exception(e.Message);
-        }
-    }
 
     [HttpGet("{id}")]
-    public IActionResult BuscarPorId(int id)
-    {
-        try
+        public IActionResult BuscarPorId(int id)
         {
-            Livro livrobuscado = _livroRepository.BuscarPorId(id);
-            if (livrobuscado == null)
+            try
             {
-                return NotFound();
+                Livro livrobuscado = _livroRepository.BuscarPorId(id);
+                if (livrobuscado == null)
+                {
+                    return NotFound();
+                }
+                {
+                    return Ok(livrobuscado);
+                }
             }
+            catch (Exception e)
             {
-                return Ok(livrobuscado);
+                throw new Exception(e.Message);
             }
         }
-        catch (Exception e)
-        {
-            throw new Exception(e.Message);
-        }
-    }
-
+        [Authorize(Roles = "1")]
     [HttpPost]
 
-    public IActionResult Cadastrar(Livro li)
-    {
-        try
+        public IActionResult Cadastrar(Livro li)
         {
-            _livroRepository.Cadastrar(li);
-            return StatusCode(201);
+            try
+            {
+                _livroRepository.Cadastrar(li);
+                return StatusCode(201);
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
         }
-        catch (Exception e)
-        {
-            throw new Exception(e.Message);
-        }
-    }
 
     [HttpDelete("{id}")]
 
-    public IActionResult Excluir(int id)
-    {
-
-        try
+        public IActionResult Excluir(int id)
         {
-            _livroRepository.Excluir(id);
 
-            return Ok("Livro excluido com sucesso!");
+            try
+            {
+                _livroRepository.Excluir(id);
+
+                return Ok("Livro excluido com sucesso!");
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
         }
-        catch (Exception e)
-        {
-            throw new Exception(e.Message);
-        }
-    }
 
     [HttpPut("{id}")]
 
-    public IActionResult Atualizar(int id, Livro li)
-    {
-
-        try
+        public IActionResult Atualizar(int id, Livro li)
         {
-            _livroRepository.Atualizar(id, li);
 
-            return StatusCode(204);
-        }
-        catch (Exception e)
-        {
-            throw new Exception(e.Message);
-        }
+            try
+            {
+                _livroRepository.Atualizar(id, li);
 
+                return StatusCode(204);
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+
+        }
     }
-}
 
 }
 
