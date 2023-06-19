@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\arnal\\Documents\\SENAI\\UC14\\ER3\\SoluçãoER1\\Chapter\\Chapter.csproj": {}
+    "C:\\Users\\arnal\\Documents\\SENAI\\UC14\\ER4\\SoluçãoER1\\Chapter\\Chapter.csproj": {}
   },
   "projects": {
-    "C:\\Users\\arnal\\Documents\\SENAI\\UC14\\ER3\\SoluçãoER1\\Chapter\\Chapter.csproj": {
+    "C:\\Users\\arnal\\Documents\\SENAI\\UC14\\ER4\\SoluçãoER1\\Chapter\\Chapter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\arnal\\Documents\\SENAI\\UC14\\ER3\\SoluçãoER1\\Chapter\\Chapter.csproj",
+        "projectUniqueName": "C:\\Users\\arnal\\Documents\\SENAI\\UC14\\ER4\\SoluçãoER1\\Chapter\\Chapter.csproj",
         "projectName": "Chapter",
-        "projectPath": "C:\\Users\\arnal\\Documents\\SENAI\\UC14\\ER3\\SoluçãoER1\\Chapter\\Chapter.csproj",
+        "projectPath": "C:\\Users\\arnal\\Documents\\SENAI\\UC14\\ER4\\SoluçãoER1\\Chapter\\Chapter.csproj",
         "packagesPath": "C:\\Users\\arnal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\arnal\\Documents\\SENAI\\UC14\\ER3\\SoluçãoER1\\Chapter\\obj\\",
+        "outputPath": "C:\\Users\\arnal\\Documents\\SENAI\\UC14\\ER4\\SoluçãoER1\\Chapter\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\arnal\\AppData\\Roaming\\NuGet\\NuGet.Config",
