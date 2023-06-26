@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap');
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .conteudo-sobre {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        background-color: rgb(3, 97, 22);
+    }
+
+    .logo {
+        width: 200px;
+    }
+}

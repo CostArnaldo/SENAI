@@ -1,0 +1,82 @@
+footer {
+    background-color: white;
+}
+
+.rodape {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+
+.links-footer {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links-footer h2 {
+    font-family: 'Titillium Web';
+    font-size: 24px;
+}
+
+.links-footer a {
+    font-family: 'Titillium Web';
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+}
+
+.links-footer a:hover {
+    color: #CCCCD0;
+}
+
+.sociais {
+    width: 31%;
+}
+
+.sociais p {
+    font-family: 'Titillium Web';    
+}
+
+.sociais form {
+    width: 100%;
+    display: flex; 
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.sociais input[type="email"]{
+    height: 37px;
+    width: 65%;  
+    border-radius: 1px; 
+    border-style: none; 
+    border-color: black;
+    text-indent: 5px;
+}
+
+.sociais input[type="email"]::placeholder {
+    color: #B8B3B3;
+    font-weight: bold;
+}
+
+.sociais button{
+    width: 35%;
+    color: black;
+    background-color: #efb810;
+    border: none;
+    font-family: 'Titillium Web';
+    font-weight: 600;
+}
+
+.siga-nos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.8em;
+}
+
+.siga-nos h2 {
+    font-family: 'Titillium Web';
+    font-size: 23px;
+}
