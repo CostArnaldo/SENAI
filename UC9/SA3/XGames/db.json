@@ -9,6 +9,21 @@
       "email": "aluno10@gmail.com",
       "password": "$2a$10$wobkuLLKjpzJrxin9TCCzesKuNLpG3LlPxjvGVZplKn1egkEwHy9.",
       "id": 3
+    },
+    {
+      "email": "fernando@gmail.com",
+      "password": "$2a$10$3lCwaTXU0okGfjgfB8A82OQbMEIOLMsCe2EwBTQicZ2EDFmTePAxq",
+      "id": 4
+    },
+    {
+      "email": "arnaldo@gmail.com",
+      "password": "$2a$10$UoXOPnRzInDev8Ei2jeSce72EtdS.XUf6H8XrZD2LpPfMw0WE6Ax2",
+      "id": 5
+    },
+    {
+      "email": "samantatose@gmail.com",
+      "password": "$2a$10$drqYrxLDY6Zp89JvdzcO9uA2Wwgy35R6PxfHe2wfwTIHcAGJxdtZK",
+      "id": 6
     }
   ]
 }

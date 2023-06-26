@@ -4,7 +4,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: black;
+    color: white;
 }
 form {
     width: 40%;
